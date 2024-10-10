@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "sqlings"
+version = "0.0.1"
+description = "Learn SQL the fun way"
+authors = ["jkausti"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich-click = "^1.8.3"
+duckdb = "^1.0.0"
+sqlglot = {extras = ["rs"], version = "^25.16.0"}
+polars = {extras = ["pyarrow"], version = "^1.5.0"}
+sqlparse = "^0.5.1"
+textual = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pip = "^24.2"
+setuptools = "^74.0.0"
+wheel = "^0.44.0"
+textual-dev = "^1.6.1"
+memray = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+sqlings = "sqlings.main:sqlings"
+
+[tool.pyright]
+exclude = ['.venv']
+venvPath = '.'
+venv = ".venv"
+typeCheckingMode = "basic"
+
