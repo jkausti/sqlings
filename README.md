@@ -15,11 +15,15 @@ Prerequisites:
 * A modern terminal emulator, like Wezterm, Kitty, Alacritty or Windows Terminal
 * Python 3.12 (it may or may not work on other python versions)
 
-Grab the latest wheel from the release-page and install that with pip or any
-other package manager.
+To install Sqlings, you can run the following command in your terminal:
 
-Ensure you have Sqlings properly installed by running the `sqlings` command from
-the command line.
+```bash
+pip install git+https://github.com/jkausti/sqlings.git
+```
+
+After that, ensure you have Sqlings properly installed by running the `sqlings`
+command from the command line. It might make sense to install Sqlings in a
+virtual environment to avoid conflicts with global Python packages.
 
 If you encounter problems, please raise an issue and describe your problem!
 
