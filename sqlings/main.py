@@ -38,20 +38,7 @@ def new(config: Config, project_name: str):
 @sqlings.command
 @click.pass_obj
 def start(config: Config):
-    """
-    Start the application that analyses your SQLings progress
-
-    This will work in the following way:
-        - 1 thread that draws the UI
-            - Takes events as inputs (from a queue) and redraws ui when such an event occur
-        - 1 thread that monitors the filesystem
-            - Emits events to a queue when filesystem has been updated
-        - 1 thread that monitors for keypresses from the terminal
-            - Emits events to a queue based on keypresses
-
-
-    """
-
+    """Start the Sqlings App to track your progress"""
     console = Console()
     try:
         state = AppState(config)

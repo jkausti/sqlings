@@ -1,5 +1,3 @@
-from rich_click import style
-from textual import events
 from textual.containers import Container
 from sqlings.state import AppState
 from textual.app import App

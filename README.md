@@ -22,8 +22,9 @@ pip install git+https://github.com/jkausti/sqlings.git
 ```
 
 After that, ensure you have Sqlings properly installed by running the `sqlings`
-command from the command line. It might make sense to install Sqlings in a
-virtual environment to avoid conflicts with global Python packages.
+command from the command line. It probably makes sense to install Sqlings in a
+virtual environment to avoid conflicts with global Python packages. You can also
+install Sqlings with `pipx` if you prefer.
 
 If you encounter problems, please raise an issue and describe your problem!
 

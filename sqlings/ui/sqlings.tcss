@@ -17,7 +17,6 @@
     border-title-align: left;
     border-title-style: bold;
     border-title-color: white;
-    /* border-title-background: $error-darken-1; */
     border-title-background: red;
     height: auto;
 }
