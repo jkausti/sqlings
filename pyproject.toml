@@ -12,7 +12,7 @@ duckdb = "^1.0.0"
 sqlglot = {extras = ["rs"], version = "^25.16.0"}
 polars = {extras = ["pyarrow"], version = "^1.5.0"}
 sqlparse = "^0.5.1"
-textual = "^1.0.0"
+textual = "2.1.2"
 
 [tool.poetry.group.dev.dependencies]
 pip = "^24.2"

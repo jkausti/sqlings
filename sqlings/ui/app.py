@@ -33,7 +33,10 @@ class SqlingsApp(App):
             description="Exit app",
         ),
         Binding(
-            key="n", action="goto_next", description="Go to next exercise", show=False
+            key="n",
+            action="goto_next",
+            description="Go to next exercise",
+            show=False,
         ),
     ]
 
@@ -59,11 +62,19 @@ class SqlingsApp(App):
         else:
             with Container(classes="container1") as c:
                 c.border_title = f"Current exercise - {self.state.next_exercise.name}"
-                yield Static(self.state.next_exercise.path, classes="text1")
+                yield Static(
+                    self.state.next_exercise.path,
+                    classes="text1",
+                    markup=False,
+                )
 
             with Container(classes="container1") as c:
                 c.border_title = "Exercise description"
-                yield Static(str(self.state.next_exercise.comment), classes="text1")
+                yield Static(
+                    str(self.state.next_exercise.comment),
+                    classes="text1",
+                    markup=False,
+                )
 
             with Container(classes="container1") as c:
                 c.border_title = "Data Preview"
@@ -87,6 +98,7 @@ class SqlingsApp(App):
                     yield Static(
                         self.state.next_exercise.result.traceback[1],
                         classes="error-text",
+                        markup=False,
                     )
 
             yield Footer()
