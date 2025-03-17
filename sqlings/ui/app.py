@@ -105,6 +105,7 @@ class SqlingsApp(App):
 
     def on_mount(self) -> None:
         self.title = "Sqlings"
+        self.theme = "tokyo-night"
         _ = self.set_interval(1, self.monitor_project)
 
     async def monitor_project(self):
