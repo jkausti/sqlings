@@ -20,6 +20,8 @@ setuptools = "^74.0.0"
 wheel = "^0.44.0"
 textual-dev = "^1.6.1"
 memray = "^1.15.0"
+pytest = "^8.3.5"
+pytest-cov = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
